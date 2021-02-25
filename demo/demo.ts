@@ -25,3 +25,5 @@ let state = EditorState.create({doc: `<script>
 ]})
 
 ;(window as any).view = new EditorView({state, parent: document.querySelector("#editor")!})
+
+document.body.addEventListener("input", (event) => console.log(event))
